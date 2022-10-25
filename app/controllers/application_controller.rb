@@ -7,13 +7,8 @@ class ApplicationController < Sinatra::Base
     end
 
     get "/demons" do
-      demons = Demon.all
+      demons = Demon.number_of_souls
       demons.to_json
-    end
-
-    get "/demons/number_of_souls" do
-      souls = Demon.all
-      souls.to_json
     end
 
     post "/souls" do

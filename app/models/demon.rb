@@ -1,8 +1,8 @@
 class Demon < ActiveRecord::Base
     has_many :souls
 
-     def number_of_souls
-        self.souls.count
+     def self.number_of_souls
+        self.all.map { |d| d.attributes.merge(soul_num: d.souls.count)}
      end
-     
+
 end

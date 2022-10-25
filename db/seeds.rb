@@ -5,6 +5,7 @@ d1 = Demon.create(name: "Megaera", classification: "furies")
 d2 = Demon.create(name: "Alecto", classification: "furies")
 d3 = Demon.create(name: "Tisiphone", classification: "furies")
 
+
 # create 50 souls...
 50.times do
     soul = Soul.create(
