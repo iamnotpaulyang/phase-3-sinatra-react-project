@@ -11,6 +11,11 @@ class ApplicationController < Sinatra::Base
       demons.to_json
     end
 
+    get "/demons/number_of_souls" do
+      souls = Demon.all
+      souls.to_json
+    end
+
     post "/souls" do
       soul = Soul.create(
         name: params[:name],
@@ -25,7 +30,7 @@ class ApplicationController < Sinatra::Base
     post "/demons" do
       demon = Demon.create(
         name: params[:name],
-        number_of_souls: params[:number_of_souls]
+        classification: params[:classification]
       )
       demon.to_json
     end
