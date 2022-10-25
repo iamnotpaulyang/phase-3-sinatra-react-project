@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2022_10_24_204926) do
 
   create_table "demons", force: :cascade do |t|
     t.string "name"
-    t.string "number_of_souls"
+    t.string "classification"
   end
 
   create_table "souls", force: :cascade do |t|

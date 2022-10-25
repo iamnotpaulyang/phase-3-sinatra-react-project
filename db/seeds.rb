@@ -1,9 +1,9 @@
 puts "🌱 Seeding data..."
 
 #create demons...
-d1 = Demon.create(name: "Megaera", number_of_souls: 20)
-d2 = Demon.create(name: "Alecto", number_of_souls: 16)
-d3 = Demon.create(name: "Tisiphone", number_of_souls: 14)
+d1 = Demon.create(name: "Megaera", classification: "furies")
+d2 = Demon.create(name: "Alecto", classification: "furies")
+d3 = Demon.create(name: "Tisiphone", classification: "furies")
 
 # create 50 souls...
 50.times do
