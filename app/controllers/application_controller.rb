@@ -25,7 +25,8 @@ class ApplicationController < Sinatra::Base
     post "/demons" do
       demon = Demon.create(
         name: params[:name],
-        classification: params[:classification]
+        classification: params[:classification],
+        demon_img: params[:demon_img],
       )
       demon.to_json
     end

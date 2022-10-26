@@ -1,9 +1,9 @@
 puts "🌱 Seeding data..."
 
 #create demons...
-d1 = Demon.create(name: "Megaera", classification: "furies", demon_img: "https://www.gamesatlas.com/images/jch-optimize/ng/images_hades_megaera.webp")
-d2 = Demon.create(name: "Alecto", classification: "furies", demon_img: "https://www.gamesatlas.com/images/jch-optimize/ng/images_hades_alecto.webp")
-d3 = Demon.create(name: "Tisiphone", classification: "furies", demon_img: "https://www.gamesatlas.com/images/jch-optimize/ng/images_hades_tisiphone.webp")
+d1 = Demon.create(name: "Megaera", classification: "Furies", demon_img: "https://www.gamesatlas.com/images/jch-optimize/ng/images_hades_megaera.webp")
+d2 = Demon.create(name: "Alecto", classification: "Furies", demon_img: "https://www.gamesatlas.com/images/jch-optimize/ng/images_hades_alecto.webp")
+d3 = Demon.create(name: "Tisiphone", classification: "Furies", demon_img: "https://www.gamesatlas.com/images/jch-optimize/ng/images_hades_tisiphone.webp")
 
 # create 50 souls...
 50.times do
