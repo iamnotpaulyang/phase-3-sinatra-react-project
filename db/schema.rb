@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_24_204926) do
+ActiveRecord::Schema.define(version: 2022_10_26_142241) do
 
   create_table "demons", force: :cascade do |t|
     t.string "name"
     t.string "classification"
+    t.string "demon_img"
   end
 
   create_table "souls", force: :cascade do |t|
